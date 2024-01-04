@@ -1,0 +1,646 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>openexchangerates_api</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Flags-png\aed.png" />
+    <None Remove="Resources\Flags-png\afn.png" />
+    <None Remove="Resources\Flags-png\all.png" />
+    <None Remove="Resources\Flags-png\amd.png" />
+    <None Remove="Resources\Flags-png\ang.png" />
+    <None Remove="Resources\Flags-png\aoa.png" />
+    <None Remove="Resources\Flags-png\ars.png" />
+    <None Remove="Resources\Flags-png\aud.png" />
+    <None Remove="Resources\Flags-png\awg.png" />
+    <None Remove="Resources\Flags-png\azn.png" />
+    <None Remove="Resources\Flags-png\bbd.png" />
+    <None Remove="Resources\Flags-png\bdt.png" />
+    <None Remove="Resources\Flags-png\bgn.png" />
+    <None Remove="Resources\Flags-png\bhd.png" />
+    <None Remove="Resources\Flags-png\bif.png" />
+    <None Remove="Resources\Flags-png\bmd.png" />
+    <None Remove="Resources\Flags-png\bnd.png" />
+    <None Remove="Resources\Flags-png\bob.png" />
+    <None Remove="Resources\Flags-png\brl.png" />
+    <None Remove="Resources\Flags-png\bsd.png" />
+    <None Remove="Resources\Flags-png\btn.png" />
+    <None Remove="Resources\Flags-png\bwp.png" />
+    <None Remove="Resources\Flags-png\byn.png" />
+    <None Remove="Resources\Flags-png\bzd.png" />
+    <None Remove="Resources\Flags-png\cad.png" />
+    <None Remove="Resources\Flags-png\cdf.png" />
+    <None Remove="Resources\Flags-png\chf.png" />
+    <None Remove="Resources\Flags-png\clp.png" />
+    <None Remove="Resources\Flags-png\cny.png" />
+    <None Remove="Resources\Flags-png\cop.png" />
+    <None Remove="Resources\Flags-png\crc.png" />
+    <None Remove="Resources\Flags-png\cup.png" />
+    <None Remove="Resources\Flags-png\cve.png" />
+    <None Remove="Resources\Flags-png\czk.png" />
+    <None Remove="Resources\Flags-png\djf.png" />
+    <None Remove="Resources\Flags-png\dkk.png" />
+    <None Remove="Resources\Flags-png\dop.png" />
+    <None Remove="Resources\Flags-png\dzd.png" />
+    <None Remove="Resources\Flags-png\egp.png" />
+    <None Remove="Resources\Flags-png\ern.png" />
+    <None Remove="Resources\Flags-png\etb.png" />
+    <None Remove="Resources\Flags-png\eur.png" />
+    <None Remove="Resources\Flags-png\fjd.png" />
+    <None Remove="Resources\Flags-png\fkp.png" />
+    <None Remove="Resources\Flags-png\gbp.png" />
+    <None Remove="Resources\Flags-png\gel.png" />
+    <None Remove="Resources\Flags-png\ggp.png" />
+    <None Remove="Resources\Flags-png\ghs.png" />
+    <None Remove="Resources\Flags-png\gip.png" />
+    <None Remove="Resources\Flags-png\gmd.png" />
+    <None Remove="Resources\Flags-png\gnf.png" />
+    <None Remove="Resources\Flags-png\gtq.png" />
+    <None Remove="Resources\Flags-png\gyd.png" />
+    <None Remove="Resources\Flags-png\hkd.png" />
+    <None Remove="Resources\Flags-png\hnl.png" />
+    <None Remove="Resources\Flags-png\hrk.png" />
+    <None Remove="Resources\Flags-png\htg.png" />
+    <None Remove="Resources\Flags-png\huf.png" />
+    <None Remove="Resources\Flags-png\idr.png" />
+    <None Remove="Resources\Flags-png\ils.png" />
+    <None Remove="Resources\Flags-png\imp.png" />
+    <None Remove="Resources\Flags-png\inr.png" />
+    <None Remove="Resources\Flags-png\iqd.png" />
+    <None Remove="Resources\Flags-png\irr.png" />
+    <None Remove="Resources\Flags-png\isk.png" />
+    <None Remove="Resources\Flags-png\jep.png" />
+    <None Remove="Resources\Flags-png\jmd.png" />
+    <None Remove="Resources\Flags-png\jod.png" />
+    <None Remove="Resources\Flags-png\jpy.png" />
+    <None Remove="Resources\Flags-png\kes.png" />
+    <None Remove="Resources\Flags-png\kgs.png" />
+    <None Remove="Resources\Flags-png\khr.png" />
+    <None Remove="Resources\Flags-png\kmf.png" />
+    <None Remove="Resources\Flags-png\kpw.png" />
+    <None Remove="Resources\Flags-png\krw.png" />
+    <None Remove="Resources\Flags-png\kwd.png" />
+    <None Remove="Resources\Flags-png\kyd.png" />
+    <None Remove="Resources\Flags-png\kzt.png" />
+    <None Remove="Resources\Flags-png\lak.png" />
+    <None Remove="Resources\Flags-png\lbp.png" />
+    <None Remove="Resources\Flags-png\lkr.png" />
+    <None Remove="Resources\Flags-png\lrd.png" />
+    <None Remove="Resources\Flags-png\lsl.png" />
+    <None Remove="Resources\Flags-png\lyd.png" />
+    <None Remove="Resources\Flags-png\mad.png" />
+    <None Remove="Resources\Flags-png\mdl.png" />
+    <None Remove="Resources\Flags-png\mga.png" />
+    <None Remove="Resources\Flags-png\mkd.png" />
+    <None Remove="Resources\Flags-png\mmk.png" />
+    <None Remove="Resources\Flags-png\mnt.png" />
+    <None Remove="Resources\Flags-png\mop.png" />
+    <None Remove="Resources\Flags-png\mro.png" />
+    <None Remove="Resources\Flags-png\mur.png" />
+    <None Remove="Resources\Flags-png\mvr.png" />
+    <None Remove="Resources\Flags-png\mwk.png" />
+    <None Remove="Resources\Flags-png\mxn.png" />
+    <None Remove="Resources\Flags-png\myr.png" />
+    <None Remove="Resources\Flags-png\mzn.png" />
+    <None Remove="Resources\Flags-png\nad.png" />
+    <None Remove="Resources\Flags-png\ngn.png" />
+    <None Remove="Resources\Flags-png\nio.png" />
+    <None Remove="Resources\Flags-png\nok.png" />
+    <None Remove="Resources\Flags-png\npr.png" />
+    <None Remove="Resources\Flags-png\nzd.png" />
+    <None Remove="Resources\Flags-png\omr.png" />
+    <None Remove="Resources\Flags-png\pab.png" />
+    <None Remove="Resources\Flags-png\pen.png" />
+    <None Remove="Resources\Flags-png\pgk.png" />
+    <None Remove="Resources\Flags-png\php.png" />
+    <None Remove="Resources\Flags-png\pkr.png" />
+    <None Remove="Resources\Flags-png\pln.png" />
+    <None Remove="Resources\Flags-png\pyg.png" />
+    <None Remove="Resources\Flags-png\qar.png" />
+    <None Remove="Resources\Flags-png\ron.png" />
+    <None Remove="Resources\Flags-png\rsd.png" />
+    <None Remove="Resources\Flags-png\rub.png" />
+    <None Remove="Resources\Flags-png\rwf.png" />
+    <None Remove="Resources\Flags-png\sar.png" />
+    <None Remove="Resources\Flags-png\sbd.png" />
+    <None Remove="Resources\Flags-png\scr.png" />
+    <None Remove="Resources\Flags-png\sek.png" />
+    <None Remove="Resources\Flags-png\sgd.png" />
+    <None Remove="Resources\Flags-png\shp.png" />
+    <None Remove="Resources\Flags-png\sll.png" />
+    <None Remove="Resources\Flags-png\sos.png" />
+    <None Remove="Resources\Flags-png\srd.png" />
+    <None Remove="Resources\Flags-png\std.png" />
+    <None Remove="Resources\Flags-png\svc.png" />
+    <None Remove="Resources\Flags-png\syp.png" />
+    <None Remove="Resources\Flags-png\szl.png" />
+    <None Remove="Resources\Flags-png\thb.png" />
+    <None Remove="Resources\Flags-png\tjs.png" />
+    <None Remove="Resources\Flags-png\tmt.png" />
+    <None Remove="Resources\Flags-png\tnd.png" />
+    <None Remove="Resources\Flags-png\top.png" />
+    <None Remove="Resources\Flags-png\try.png" />
+    <None Remove="Resources\Flags-png\ttd.png" />
+    <None Remove="Resources\Flags-png\twd.png" />
+    <None Remove="Resources\Flags-png\tzs.png" />
+    <None Remove="Resources\Flags-png\uah.png" />
+    <None Remove="Resources\Flags-png\ugx.png" />
+    <None Remove="Resources\Flags-png\usd.png" />
+    <None Remove="Resources\Flags-png\uyu.png" />
+    <None Remove="Resources\Flags-png\uzs.png" />
+    <None Remove="Resources\Flags-png\vef.png" />
+    <None Remove="Resources\Flags-png\vnd.png" />
+    <None Remove="Resources\Flags-png\vuv.png" />
+    <None Remove="Resources\Flags-png\wst.png" />
+    <None Remove="Resources\Flags-png\xaf.png" />
+    <None Remove="Resources\Flags-png\xcd.png" />
+    <None Remove="Resources\Flags-png\xof.png" />
+    <None Remove="Resources\Flags-png\xpf.png" />
+    <None Remove="Resources\Flags-png\yer.png" />
+    <None Remove="Resources\Flags-png\zar.png" />
+    <None Remove="Resources\Flags-png\zmw.png" />
+    <None Remove="Resources\sync.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Flags-png\aed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\afn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\all.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\amd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ang.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\aoa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ars.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\aud.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\awg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\azn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bbd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bdt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bgn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bhd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bif.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bmd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bnd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bob.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\brl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bsd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\btn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bwp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\byn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\bzd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\cad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\cdf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\chf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\clp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\cny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\cop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\crc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\cup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\cve.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\czk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\djf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\dkk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\dop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\dzd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\egp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ern.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\etb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\eur.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\fjd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\fkp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\gbp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\gel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ggp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ghs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\gip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\gmd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\gnf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\gtq.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\gyd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\hkd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\hnl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\hrk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\htg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\huf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\idr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ils.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\imp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\inr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\iqd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\irr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\isk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\jep.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\jmd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\jod.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\jpy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\kes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\kgs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\khr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\kmf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\kpw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\krw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\kwd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\kyd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\kzt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\lak.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\lbp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\lkr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\lrd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\lsl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\lyd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mdl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mga.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mkd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mmk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mnt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mro.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mur.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mvr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mwk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mxn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\myr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\mzn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\nad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ngn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\nio.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\nok.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\npr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\nzd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\omr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\pab.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\pen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\pgk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\php.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\pkr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\pln.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\pyg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\qar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ron.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\rsd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\rub.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\rwf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\sar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\sbd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\scr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\sek.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\sgd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\shp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\sll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\sos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\srd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\std.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\svc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\syp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\szl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\thb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\tjs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\tmt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\tnd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\top.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\try.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ttd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\twd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\tzs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\uah.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\ugx.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\usd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\uyu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\uzs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\vef.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\vnd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\vuv.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\wst.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\xaf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\xcd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\xof.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\xpf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\yer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\zar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Flags-png\zmw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\sync.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
